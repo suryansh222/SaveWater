@@ -1,0 +1,327 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Save Water Save Life
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <script src="https://checkout.razorpay.com/v1/checkout.js">
+  </script>
+  <script>
+   function openRazorpay() {
+    var options = {
+     "key": "YOUR_RAZORPAY_KEY_ID",
+     "amount": "50000", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise or ₹500.
+     "currency": "INR",
+     "name": "Save Water Save Life",
+     "description": "Donation",
+     "image": "https://storage.googleapis.com/a1aa/image/do9uBgdCJX4xJtWjhl0NFdUiXnx4qfgLQsGZ9Qiyb4bRd38JA.jpg",
+     "handler": function (response) {
+      alert("Payment successful. Payment ID: " + response.razorpay_payment_id);
+     },
+     "prefill": {
+      "name": "Shagun Jawla",
+      "email": "shagun@example.com",
+      "contact": "9999999999"
+     },
+     "theme": {
+      "color": "#3399cc"
+     }
+    };
+    var rzp1 = new Razorpay(options);
+    rzp1.open();
+   }
+  </script>
+ </head>
+ <body class="font-roboto bg-gray-100">
+  <!-- Header Section -->
+  <header class="bg-blue-600 text-white p-4">
+   <div class="container mx-auto flex justify-between items-center">
+    <h1 class="text-2xl font-bold">
+     Save Water Save Life
+    </h1>
+    <nav>
+     <ul class="flex space-x-4">
+      <li>
+       <a class="hover:underline" href="#home">
+        Home
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#about">
+        About
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#tips">
+        Tips
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#news">
+        News
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#contact">
+        Contact
+       </a>
+      </li>
+     </ul>
+    </nav>
+   </div>
+  </header>
+  <!-- Hero Section -->
+  <section class="relative" id="home">
+   <img alt="A close-up of water droplets on a leaf, symbolizing the importance of water conservation" class="w-full h-96 object-cover" height="600" src="https://storage.googleapis.com/a1aa/image/do9uBgdCJX4xJtWjhl0NFdUiXnx4qfgLQsGZ9Qiyb4bRd38JA.jpg" width="1920"/>
+   <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+    <div class="text-center text-white">
+     <h2 class="text-4xl font-bold">
+      Save Water, Save Life
+     </h2>
+     <p class="mt-4 text-lg">
+      Join us in our mission to conserve water and protect our planet.
+     </p>
+     <a class="mt-6 inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" href="#about">
+      Learn More
+     </a>
+    </div>
+   </div>
+  </section>
+  <!-- About Section -->
+  <section class="py-12 bg-white" id="about">
+   <div class="container mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-6">
+     About Our Mission
+    </h2>
+    <p class="text-lg mb-6">
+     Our mission is to raise awareness about the importance of water conservation and to provide practical tips and resources to help individuals and communities save water.
+    </p>
+    <img alt="Illustration of water conservation efforts including rainwater harvesting and efficient water usage" class="mx-auto" height="400" src="https://storage.googleapis.com/a1aa/image/jF3YF5ZUtabgK5iJXDqnle0Ypiq8zPlc80G453558tCYW38JA.jpg" width="800"/>
+   </div>
+  </section>
+  <!-- Water Crisis Section -->
+  <section class="py-12 bg-gray-200" id="impact">
+   <div class="container mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-6">
+     The Global Water Crisis and Its Effects
+    </h2>
+    <p class="text-lg mb-6">
+     The global water crisis affects millions of people around the world. Lack of access to clean water and sanitation leads to severe health issues, economic challenges, and social inequalities.
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+     <div class="bg-white p-6 rounded shadow">
+      <img alt="A child drinking dirty water from a polluted source" class="w-full h-40 object-cover mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/NldKeAbGIgTCMK0bokfGsd7uvPxw4h7Zp4scLezuI9UeV7mPB.jpg" width="300"/>
+      <h3 class="text-xl font-bold mb-2">
+       Health Impacts
+      </h3>
+      <p>
+       Contaminated water sources lead to waterborne diseases such as cholera, dysentery, and typhoid, affecting millions of children and adults.
+      </p>
+     </div>
+     <div class="bg-white p-6 rounded shadow">
+      <img alt="A woman carrying a heavy container of water over a long distance" class="w-full h-40 object-cover mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/WB9f3jBdjm0EYCkqw1nbuzebaEIZT9mkI00CFkcuXKQg1u5TA.jpg" width="300"/>
+      <h3 class="text-xl font-bold mb-2">
+       Economic Burden
+      </h3>
+      <p>
+       Women and children often bear the burden of collecting water, spending hours each day walking long distances, which limits their opportunities for education and work.
+      </p>
+     </div>
+     <div class="bg-white p-6 rounded shadow">
+      <img alt="A dry, cracked riverbed indicating severe drought" class="w-full h-40 object-cover mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/gdobG5LCSd7NOZ39ZrfIE0cifD3FM4eJoj6vniMjpfnwV7mPB.jpg" width="300"/>
+      <h3 class="text-xl font-bold mb-2">
+       Environmental Impact
+      </h3>
+      <p>
+       Over-extraction of water and climate change contribute to droughts and the depletion of water sources, affecting ecosystems and biodiversity.
+      </p>
+     </div>
+     <div class="bg-white p-6 rounded shadow">
+      <img alt="A community gathering around a newly installed clean water pump" class="w-full h-40 object-cover mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/XzQk4BJCRo6GP1b1t1HuA2lj7r0yJ3iTPU8wCAig0WtWtbeJA.jpg" width="300"/>
+      <h3 class="text-xl font-bold mb-2">
+       Social Inequality
+      </h3>
+      <p>
+       Access to clean water and sanitation is often unequal, with marginalized communities facing the greatest challenges in securing these basic needs.
+      </p>
+     </div>
+    </div>
+    <a class="hover:underline text-blue-500 mt-6 inline-block" href="#home">
+     Home
+    </a>
+   </div>
+  </section>
+  <!-- Tips Section -->
+  <section class="py-12 bg-gray-200" id="tips">
+   <div class="container mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-6">
+     Water Saving Tips
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+     <div class="bg-white p-6 rounded shadow">
+      <img alt="A person turning off a faucet to save water" class="w-full h-40 object-cover mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/jeCxNnrSpaxqUKhZ5A5bXEDWR7xqlVMrSvMmfMTivPlpsu5TA.jpg" width="300"/>
+      <h3 class="text-xl font-bold mb-2">
+       Turn Off the Tap
+      </h3>
+      <p>
+       Always turn off the tap while brushing your teeth or washing dishes to save water.
+      </p>
+     </div>
+     <div class="bg-white p-6 rounded shadow">
+      <img alt="A garden with a rainwater harvesting system" class="w-full h-40 object-cover mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/z6qBFEyw7Uq1DhOOGCdad4iQ803TgWflTe5eTksN6hjfy6mPB.jpg" width="300"/>
+      <h3 class="text-xl font-bold mb-2">
+       Harvest Rainwater
+      </h3>
+      <p>
+       Install a rainwater harvesting system to collect and use rainwater for gardening and other purposes.
+      </p>
+     </div>
+     <div class="bg-white p-6 rounded shadow">
+      <img alt="A person fixing a leaking pipe" class="w-full h-40 object-cover mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/HM8dvXXl14rLGlaGILyfAcoN1g33dY9Qf2RvKPhmsDBxsu5TA.jpg" width="300"/>
+      <h3 class="text-xl font-bold mb-2">
+       Fix Leaks
+      </h3>
+      <p>
+       Regularly check for and fix any leaks in your plumbing to prevent water wastage.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <div class="container mx-auto text-center">
+  <h2 class="text-3xl font-bold mb-6" >
+    <a href="volunteer.html">Click to Volunteer a Program</a>
+    <h1>Get involved in our volunteer program and help clean and protect our water sources.</h1>
+
+   </h2>
+  </div>
+  <!-- News Section -->
+  <section class="py-12 bg-white" id="news">
+   <div class="container mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-6">
+     Latest News
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+     <div class="bg-gray-100 p-6 rounded shadow">
+      <img alt="A community event focused on water conservation" class="w-full h-40 object-cover mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/pjyUvnxCdDYjDlhd8ZrdAmfkgYGi370yUEuqmwmxCdwVW38JA.jpg" width="300"/>
+      <h3 class="text-xl font-bold mb-2">
+        <a href="communitynews.html">Community Events</a>
+      </h3>
+      <p>
+       Join us for a community event focused on water conservation and sustainable living.
+      </p>
+      <a class="text-blue-500 hover:underline" href="#">
+       Read More
+      </a>
+     </div>
+     <div class="bg-gray-100 p-6 rounded shadow">
+      <img alt="A new water-saving technology being implemented" class="w-full h-40 object-cover mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/57IRyjZhHXbAOJqv066xLeOpUO2mJLwiohPS3LxXuvrZW38JA.jpg" width="300"/>
+      <h3 class="text-xl font-bold mb-2">
+       New Technology
+      </h3>
+      <p>
+       Learn about the latest water-saving technologies and how they can help conserve water.
+      </p>
+      <a class="text-blue-500 hover:underline" href="#">
+       Read More
+      </a>
+     </div>
+     <div class="bg-gray-100 p-6 rounded shadow">
+      <img alt="A group of volunteers cleaning a river" class="w-full h-40 object-cover mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/WhaHDp3evBxAECIu4qM4Z54Jqx0j8r83kfxeyqfjf8jul1NfE.jpg" width="300"/>
+      <h3 class="text-xl font-bold mb-2">
+       Volunteer Program
+      </h3>
+      <p>
+       Get involved in our volunteer program and help clean and protect our water sources.
+      </p>
+      <a class="text-blue-500 hover:underline" href="#">
+       Read More
+      </a>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Donate Section -->
+  <section class="py-12 bg-blue-600 text-white text-center" id="donate">
+   <div class="container mx-auto">
+    <h2 class="text-3xl font-bold mb-6">
+     Support Our Cause
+    </h2>
+    <p class="text-lg mb-6">
+     Your donations help us continue our mission to provide clean water and sanitation to those in need.
+    </p>
+    <button class="inline-block bg-white text-blue-600 font-bold py-2 px-4 rounded hover:bg-gray-200" onclick="openRazorpay()">
+     Donate Now
+    </button>
+   </div>
+  </section>
+  <!-- Contact Section -->
+  <section class="py-12 bg-gray-200" id="contact">
+   <div class="container mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-6">
+     Contact Us
+    </h2>
+    <p class="text-lg mb-6">
+     Have questions or want to get involved? Reach out to us!
+    </p>
+    <form class="max-w-lg mx-auto bg-white p-6 rounded shadow">
+     <div class="mb-4">
+      <label class="block text-left text-gray-700" for="name">
+       Name
+      </label>
+      <input class="w-full p-2 border border-gray-300 rounded" id="name" required="" type="text"/>
+     </div>
+     <div class="mb-4">
+      <label class="block text-left text-gray-700" for="email">
+       Email
+      </label>
+      <input class="w-full p-2 border border-gray-300 rounded" id="email" required="" type="email"/>
+     </div>
+     <div class="mb-4">
+      <label class="block text-left text-gray-700" for="message">
+       Message
+      </label>
+      <textarea class="w-full p-2 border border-gray-300 rounded" id="message" required="" rows="4"></textarea>
+     </div>
+     <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">
+      Send Message
+     </button>
+    </form>
+   </div>
+  </section>
+  <!-- Footer Section -->
+  <footer class="bg-blue-600 text-white p-4">
+   <div class="container mx-auto text-center">
+    <p>
+     © 2024 Save Water Save Life. All rights reserved.
+    </p>
+    <p>
+     Website by Shagun Jawla
+    </p>
+    <div class="mt-4">
+     <a class="text-white hover:text-gray-300 mx-2" href="#">
+      <i class="fab fa-facebook-f">
+      </i>
+     </a>
+     <a class="text-white hover:text-gray-300 mx-2" href="#">
+      <i class="fab fa-twitter">
+      </i>
+     </a>
+     <a class="text-white hover:text-gray-300 mx-2" href="#">
+      <i class="fab fa-instagram">
+      </i>
+     </a>
+     <a class="text-white hover:text-gray-300 mx-2" href="#">
+      <i class="fab fa-linkedin-in">
+      </i>
+     </a>
+    </div>
+   </div>
+  </footer>
+ </body>
+</html>
